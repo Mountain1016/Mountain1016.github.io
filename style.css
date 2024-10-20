@@ -1,0 +1,89 @@
+/* グローバル設定 */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+	color: #333;
+	line-height: 1.6;
+  }
+  
+  /* ヘッダー */
+  header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  header h1 {
+	margin: 0;
+	font-size: 2.5em;
+  }
+  
+  nav ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  nav ul li {
+	display: inline;
+	margin-right: 15px;
+  }
+  
+  nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+	text-decoration: underline;
+  }
+  
+  /* ヒーローセクション */
+  .hero {
+	background: linear-gradient(135deg, #6d5acf, #52b7ff);
+	color: #fff;
+	padding: 100px 20px;
+	text-align: center;
+  }
+  
+  .hero h2 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+  }
+  
+  .hero p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+  }
+  
+  .hero .button {
+	background-color: #ff6363;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+  }
+  
+  .hero .button:hover {
+	background-color: #ff4747;
+  }
+  
+  /* フッター */
+  footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 40px;
+  }
+  
+  footer p {
+	margin: 0;
+  }
+  
