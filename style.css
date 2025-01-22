@@ -1,0 +1,123 @@
+/* 全体の設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* 背景を暗く */
+    color: #E0E0E0; /* テキストを明るいグレーに */
+}
+
+/* ヘッダー */
+header {
+    background-color: #1F1F1F; /* ヘッダーを少し明るい黒に */
+    color: #E0E0E0; /* テキストは明るい色 */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #333; /* 下に線を追加 */
+}
+
+header img {
+    max-width: 100px; /* ロゴの大きさ調整 */
+}
+
+/* ナビゲーションバー */
+nav {
+    background-color: #222; /* ナビバーを暗く */
+    overflow: hidden;
+    border-bottom: 2px solid #333; /* 線で分離 */
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #E0E0E0; /* 明るいリンク */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757; /* ホバー時の色 */
+    color: #FFFFFF; /* ホバー時のリンク色 */
+}
+
+/* メインコンテンツ */
+main {
+    padding: 20px;
+    background-color: #181818; /* コンテンツ部分を暗いグレーに */
+    border-radius: 8px; /* 角を少し丸める */
+    margin: 20px auto;
+    max-width: 800px; /* コンテンツの最大幅を設定 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 軽い影を追加 */
+}
+
+/* リスト */
+ul {
+    list-style: none; /* デフォルトのリストスタイルを削除 */
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    background-color: #222; /* リストアイテムの背景 */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1F1F1F;
+    color: #9E9E9E; /* 少し暗いグレー */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #333; /* 上に線を追加 */
+}
+
+/* フォーム */
+form {
+    background-color: #222; /* フォームの背景色 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 軽い影を追加 */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* 入力フィールドの背景 */
+    color: #E0E0E0; /* 入力フィールドの文字色 */
+}
+
+form button {
+    background-color: #4CAF50; /* ボタンの色 */
+    color: #FFFFFF; /* ボタン文字色 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45A049; /* ホバー時のボタン色 */
+}
+
+/* リンク */
+a {
+    color: #64B5F6; /* 明るい青のリンク */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #BBDEFB; /* ホバー時のリンク色 */
+}

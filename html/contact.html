@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>連絡</title>
+	<link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+	<header>
+		<h1>連絡</h1>
+	</header>
+	<nav>
+		<a href="../../top.html">トップ</a>
+	</nav>
+	<main>
+		<form id="contact-form">
+			<label for="name">名前:</label><br>
+			<input type="text" id="name" name="name" required><br>
+			<label for="email">メールアドレス:</label><br>
+			<input type="email" id="email" name="email" required><br>
+			<label for="message">メッセージ:</label><br>
+			<textarea id="message" name="message" rows="4" required></textarea><br>
+			<button type="submit">送信</button>
+		</form>
+		<p id="response"></p>
+	</main>
+	<script src="js/footer.js"></script>
+	<script>
+		document.getElementById('contact-form').addEventListener('submit', function (e) {
+			e.preventDefault();
+			document.getElementById('response').innerText = "メッセージが送信されました。ありがとうございます！";
+		});
+	</script>
+</body>
+
+</html>
