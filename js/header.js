@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.createElement("header");
     header.innerHTML = `
         <a href="${currentPath.includes('/html/') ? '/top.html' : 'top.html'}">
-            <img src="${logoPath}" alt="ロゴ" style="max-width: 100px; transition: opacity 0.3s;">
+            <img src="${logoPath}" alt="ロゴ" style="max-width: 150px; transition: opacity 0.3s;">
         </a>
     `;
     document.body.insertBefore(header, document.body.firstChild);

@@ -21,7 +21,7 @@
 		- twitter.png
 		- youtube.png
 	- js/
-		- もろもろ
+		- nav.js
 	- README.md
 	- style.css
 	- top.html

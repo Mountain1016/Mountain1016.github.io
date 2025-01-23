@@ -11,13 +11,17 @@ body {
 header {
     background-color: #1F1F1F; /* ヘッダーを少し明るい黒に */
     color: #E0E0E0; /* テキストは明るい色 */
-    padding: 20px 0;
+    padding: 8px 0;
     text-align: center;
     border-bottom: 2px solid #333; /* 下に線を追加 */
 }
 
-header img {
-    max-width: 100px; /* ロゴの大きさ調整 */
+/* フッター */
+footer {
+    text-align: center;
+    padding: 2px 0;
+    background-color: #1F1F1F;
+    color: #9E9E9E; /* 少し暗いグレー */
 }
 
 /* ナビゲーションバー */
@@ -73,15 +77,6 @@ ul li span {
     font-size: 14px;
 }
 
-/* フッター */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #1F1F1F;
-    color: #9E9E9E; /* 少し暗いグレー */
-    border-top: 2px solid #333; /* 上に線を追加 */
-}
-
 /* フォーム */
 form {
     background-color: #222; /* フォームの背景色 */
@@ -130,7 +125,7 @@ a:hover {
 /* テーブル */
 
 table {
-    width: 100; /* テーブル全体を親要素に合わせる */
+    width: 100%; /* テーブル幅 */
     border-collapse: collapse; /* セルの隙間をなくす */
     margin: 20px 0; /* 上下に余白を追加 */
     background-color: #1F1F1F; /* テーブル全体の背景色 */
@@ -146,18 +141,16 @@ th, td {
 }
 
 th {
+    width: 25%;
     background-color: #333; /* ヘッダーセルの背景色 */
     color: #E0E0E0; /* ヘッダーセルの文字色 */
     font-weight: bold; /* 太字にする */
 }
 
 td {
+    width: 75%;
     background-color: #222; /* データセルの背景色 */
     color: #E0E0E0; /* データセルの文字色 */
-}
-
-tr:hover td {
-    background-color: #444; /* ホバー時の行の背景色 */
 }
 
 /* リンクボタン */
@@ -197,7 +190,7 @@ tr:hover td {
 
 .social-image {
     opacity: 0.5; /* 初期透明度50% */
-    transition: opacity 0.3s ease; /* スムーズに透明度が変化 */
+    transition: opacity 0.2s ease; /* スムーズに透明度が変化 */
 }
 
 .social-image:hover {

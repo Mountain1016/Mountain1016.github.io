@@ -6,20 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>まふぃのサイト</title>
 	<link rel="stylesheet" href="/style.css">
-	<script src="/js/header.js" defer></script>
+	<script src="/js/header.js"></script>
 </head>
 
 <body>
-	<nav>
-		<a href="/html/who.html">自己紹介</a>
-		<a href="/html/works/game.html">ゲーム</a>
-		<a href="/html/works/music.html">音楽</a>
-		<a href="/html/works/picture.html">絵</a>
-		<a href="/html/diary.html">日記</a>
-		<a href="/html/histry.html">更新履歴</a>
-	</nav>
+	<div id="nav-container"></div> <!-- nav.jsでナビゲーションバーを挿入 -->
+	<script src="/js/nav.js"></script> <!-- nav.js を読み込む -->
+
 	<main>
-		<h1>よおこそ</h1>
+		<h1>よおこそいらっしゃいませ</h1>
 		<p>幾何学郷愁は，東方好きが極まり東方っぽいコンテンツを制作しているサークルです．</p>
 
 		<section id="social-accounts">
@@ -45,6 +40,7 @@
 			<p>リンクはご自由にどうぞ（報告していただけると喜びます。）</p>
 		</section>
 	</main>
+
 	<script src="/js/footer.js"></script>
 </body>
 
