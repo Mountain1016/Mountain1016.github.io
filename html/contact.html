@@ -5,16 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>連絡</title>
-	<link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="/style.css">
+	<script src="/js/header.js" defer></script>
 </head>
 
 <body>
-	<header>
-		<h1>連絡</h1>
-	</header>
-	<nav>
-		<a href="../../top.html">トップ</a>
-	</nav>
 	<main>
 		<form id="contact-form">
 			<label for="name">名前:</label><br>
@@ -27,7 +22,7 @@
 		</form>
 		<p id="response"></p>
 	</main>
-	<script src="js/footer.js"></script>
+	<script src="/js/footer.js"></script>
 	<script>
 		document.getElementById('contact-form').addEventListener('submit', function (e) {
 			e.preventDefault();

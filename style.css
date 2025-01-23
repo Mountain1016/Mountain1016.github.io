@@ -25,16 +25,18 @@ nav {
     background-color: #222; /* ナビバーを暗く */
     overflow: hidden;
     border-bottom: 2px solid #333; /* 線で分離 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
-    float: left;
-    display: block;
     color: #E0E0E0; /* 明るいリンク */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: background-color 0.3s;
+    margin: 5px;
 }
 
 nav a:hover {
@@ -59,10 +61,16 @@ ul {
 }
 
 ul li {
-    margin: 10px 0;
-    background-color: #222; /* リストアイテムの背景 */
-    padding: 10px;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    margin-right: 10px; /* Space between image and text */
+}
+
+ul li span {
+    font-size: 14px;
 }
 
 /* フッター */
@@ -71,9 +79,6 @@ footer {
     padding: 10px 0;
     background-color: #1F1F1F;
     color: #9E9E9E; /* 少し暗いグレー */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     border-top: 2px solid #333; /* 上に線を追加 */
 }
 
@@ -120,4 +125,147 @@ a {
 
 a:hover {
     color: #BBDEFB; /* ホバー時のリンク色 */
+}
+
+/* テーブル */
+
+table {
+    width: 100; /* テーブル全体を親要素に合わせる */
+    border-collapse: collapse; /* セルの隙間をなくす */
+    margin: 20px 0; /* 上下に余白を追加 */
+    background-color: #1F1F1F; /* テーブル全体の背景色 */
+    border: 1px solid #333; /* テーブル全体の枠線 */
+    border-radius: 8px; /* 角を丸く */
+    overflow: hidden; /* 丸みを超える要素を隠す */
+}
+
+th, td {
+    padding: 15px; /* セルの内側の余白を広めに */
+    text-align: left; /* 左寄せ */
+    border-bottom: 1px solid #333; /* 行の区切り線 */
+}
+
+th {
+    background-color: #333; /* ヘッダーセルの背景色 */
+    color: #E0E0E0; /* ヘッダーセルの文字色 */
+    font-weight: bold; /* 太字にする */
+}
+
+td {
+    background-color: #222; /* データセルの背景色 */
+    color: #E0E0E0; /* データセルの文字色 */
+}
+
+tr:hover td {
+    background-color: #444; /* ホバー時の行の背景色 */
+}
+
+/* リンクボタン */
+
+#social-accounts ul {
+    list-style: none;
+    padding: 0;
+}
+
+#social-accounts li {
+    margin: 10px 0;
+}
+
+#social-accounts a {
+    color: #64B5F6; /* リンク色 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#social-accounts a:hover {
+    color: #BBDEFB; /* ホバー時の色 */
+}
+
+#link-policy {
+    margin-top: 20px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#link-policy h2 {
+    margin-top: 0;
+}
+
+/* 画像 */
+
+.social-image {
+    opacity: 0.5; /* 初期透明度50% */
+    transition: opacity 0.3s ease; /* スムーズに透明度が変化 */
+}
+
+.social-image:hover {
+    opacity: 1; /* マウスが重なった時に透明度0%（完全に不透明） */
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 1024px) {
+    main {
+        padding: 15px;
+        margin: 15px auto;
+        font-size: 16px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%; /* フル幅に */
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    main {
+        max-width: 95%;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    header img {
+        max-width: 80px; /* ロゴを小さく */
+    }
+
+    nav a {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+
+    main {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px 0;
+    }
 }

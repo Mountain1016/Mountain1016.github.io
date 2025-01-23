@@ -5,22 +5,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>自己紹介</title>
-	<link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="/style.css">
+	<script src="/js/header.js" defer></script>
 </head>
 
 <body>
-	<header>
-		<h1>自己紹介</h1>
-	</header>
-	<nav>
-		<a href="../../top.html">トップ</a>
-	</nav>
 	<main>
-		<h2>こんにちは、まふぃです！</h2>
-		<p>趣味はゲーム制作や音楽作り、絵を描くことです。</p>
-		<p>このサイトでは、私の作品や活動について紹介しています。</p>
+		<h2>プロフィール</h2>
+		<table>
+			<tr>
+				<th>名前</th>
+				<td>まふぃ</td>
+			</tr>
+			<tr>
+				<th>年齢</th>
+				<td id="age"></td>
+			</tr>
+			<tr>
+				<th>職業</th>
+				<td>無し（学生）</td>
+			</tr>
+			<tr>
+				<th>趣味</th>
+				<td>かなり東方</td>
+			</tr>
+			<tr>
+				<th>座右の銘</th>
+				<td>特にないです</td>
+			</tr>
+			<tr>
+				<th>好きな言葉</th>
+				<td>わからん，いい感じ，すごい</td>
+			</tr>
+			<tr>
+				<th>好きなお酒</th>
+				<td>信じられないぐらいALDH2が低いので，全く飲めません．</td>
+			</tr>
+			<tr>
+				<th>好きな音楽家</th>
+				<td>ZUN，Yu-Peng Chen，柳川和樹，国本剛章，すぎやまこういち，米津玄師</td>
+			</tr>
+		</table>
+		<h2>最近のおすすめ</h2>
+		<table>
+			<tr>
+				<th>メダリスト</th>
+				<td>
+					激熱スポコン漫画．アニメから入った．<br>
+					内容が面白すぎて一気に最新話まで読んでしまった．<br>
+					女の子が可愛くて読み始めたのは内緒．
+				</td>
+			</tr>
+			<tr>
+				<th>ざくざくアクターズ</th>
+				<td>
+					めちゃ面白フリーゲーム．<br>
+					ストーリー，音楽，ゲームバランスがハイクオリティ．<br>
+					絵は独創的だけど，ずっとプレイしてると愛着が湧く．
+				</td>
+			</tr>
 	</main>
-	<script src="js/footer.js"></script>
+	<script>
+		// 現在の日付と誕生日を比較して年齢を計算
+		const today = new Date();
+		const currentYear = today.getFullYear();
+		const birthDate = new Date(currentYear, 9, 16); // 10月16日 (月は0始まり)
+
+		let age = currentYear - 2002; // 基本の年齢
+		if (today < birthDate) {
+			age -= 1; // 誕生日がまだ来ていなければ1歳引く
+		}
+
+		document.getElementById("age").textContent = age;
+	</script>
+	<script src="/js/footer.js"></script>
 </body>
 
 </html>
